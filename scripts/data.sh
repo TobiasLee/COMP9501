@@ -13,7 +13,7 @@ for SEED in $(seq 1 3) #1234
 do
 OUTPUT_DIR=data_selection_ckpts/${TASK_NAME}-sl${SL}-msekd-seed${SEED}-epoch${EPOCH}-LR${LR}-STRGY${STRGY}-sr${RATIO}
 
-CUDA_VISIBLE_DEVICES=$GPU python dynamic_data.py --selection_strategy $STRGY --selection_ratio $RATIO \
+CUDA_VISIBLE_DEVICES=$GPU python adaptive_data.py --selection_strategy $STRGY --selection_ratio $RATIO \
   --model_name_or_path bert-base-uncased  \
   --teacher $TEACHER_MODEL_PATH \
   --student_num_layers $SL  --warmup_ratio 0.1  \
