@@ -1,4 +1,6 @@
 transformers==4.5.1
 sklearn
 datasets
+sklearn 
+evaluate
 tensorboardX==2.1

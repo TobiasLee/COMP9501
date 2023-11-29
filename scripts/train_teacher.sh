@@ -8,7 +8,7 @@ CUDA_VISIBLE_DEVICES=$GPU python run_glue.py \
   --do_eval \
   --max_seq_length 128 \
   --per_device_train_batch_size  32 \
-  --per_device_eval_batch_size 64\
+  --per_device_eval_batch_size 64 \
   --save_total_limit 1 \
   --logging_steps 100 \
   --evaluation_strategy steps --warmup_ratio 0.05 --overwrite_output_dir  \

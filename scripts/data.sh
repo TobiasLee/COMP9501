@@ -3,7 +3,7 @@ TEACHER_MODEL_PATH=/path/to/trained_teacher
 SL=6 # student num layer
 EPOCH=3
 LR=2e-5
-for STRGY in 'margin'   # data selection ['margin', 'lc', 'entropy', 'none']
+for STRGY in 'margin'  'lc' 'none' 'entropy' # data selection ['margin', 'lc', 'entropy', 'none']
 do
 for RATIO in 0.5 # selection ratio r
 do
